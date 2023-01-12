@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(230, 230, 229, 1);
+    text-align: center;
+    
+
+    
+}
+
+/* Header Section */
+
+
+.header-container {
+    background-image: url("resources/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "logo slogan slogan nav"
+
+    
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.slogan {
+    grid-area: slogan;
+}
+
+.navigation {
+    grid-area: nav;
+}
+
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border: 1px rgba(94, 74, 227, 1) solid;
+}
+
+.slogan {
+    display: flex;
+    position: relative;
+    right: 5px;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.slogan h1 {
+    font-size: 65px;
+    color: rgba(94, 74, 227, 0.6);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    float: right;
+    gap: 25px;
+}
+
+.navigation ul a {
+    display: flex;
+    justify-content: center;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 35px;
+    color: grey;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+    
+    
+    
+}
+
+.navigation ul a:hover {
+    color: white;
+}
+
+#stick {
+    width: 250px;
+    height: 70px;
+    background-color: rgba(230, 230, 229, 1);
+}
+
+#stick:hover{
+    background-color: rgba(94, 74, 227, 1)
+}
+
+
+/* About Us Section */
+
+
+.about-container {
+    margin: 25px 25px;
+    text-align: left;
+}
+
+.about-container h1 {
+    float: left;
+    padding-right: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-container p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Photos Section */
+
+.photo-grid {
+    
+    width: 900px;
+    display: grid;
+    align-content: space-around;
+    grid-template-areas: 
+    "photo1 photo2"
+    "photo3 photo4"
+    "photo5 photo6";
+ }
+
+ .photo1 {
+    grid-area: photo1;
+ }
+ .photo2 {
+    grid-area: photo2;
+ }
+ .photo3 {
+    grid-area: photo3;
+ }
+ .photo4 {
+    grid-area: photo4;
+ }
+ .photo5 {
+    grid-area: photo5;
+ }
+ .photo6 {
+    grid-area: photo6;
+ }
+
+
+.photo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-grid img {
+
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+
+}
+
+#photos h1 {
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Contact Section */
+
+#contact {
+    width: 800px;
+    display: grid;
+    grid-template-areas: "info map map";
+    margin-top: 40px;
+    
+
+}
+
+.contact-container {
+    display: flex;
+
+}
+
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.map img {
+    width: 700px;
+    height: 250px;
+}
+
+footer {
+    margin-top: 15px;
+    height: 75px;
+    
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        max-width: 100%;
+        height: 12em;
+    }
+    
+    .logo img {
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: cover;
+    }
+    
+    .slogan {
+        width: 10px;
+        margin-left: 0px;
+    }
+
+    .slogan h1 {
+        font-size: 20px;
+        text-shadow: -1px -1px 0 , 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        
+
+    .navigation ul {
+        gap: 20px;
+    }
+
+    .navigation ul a {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #stick {
+    width: 95px;
+    height: 25px;
+}
+/* About Us Section */
+
+
+.about-container {
+    margin: 15px 10px;
+    text-align: left;
+}
+
+/* Photos Section */
+
+.photo-grid img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 10px;
+    
+}
+
+.photo-grid {
+    width:480px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-direction: row;
+    margin: 0 auto;
+    
+}
+
+/* Contact Section */
+
+
+
+}
